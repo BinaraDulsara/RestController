@@ -19,7 +19,7 @@ public class ParamsController {
 
     @GetMapping(path = "one",params = {"id"})
     public String test2(String id){
-        return " Hello 2 " + id ;
+        return " Hello 2  " + id ;
     }
 
 
