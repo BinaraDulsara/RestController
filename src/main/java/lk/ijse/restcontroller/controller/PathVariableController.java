@@ -18,9 +18,14 @@ public class PathVariableController {
     //TO DO THAT WE HAVE TO CREATE PATH VARIABLES ----> {Ioo1}
 
 
-    @GetMapping(path = "{id:[a-z]{3}}")
-    public String test(@PathVariable ("id") String itemCode){
-        return itemCode;
+    @GetMapping(path = "{id:[I][0-9]{3}}")
+    public String test(@PathVariable ("id") String id){
+        return id;
+    }
+
+    @GetMapping(path =  "{id:[C][0-9]{3}}")
+    public String test3(@PathVariable ("id") String id){
+        return id;
     }
 
     @GetMapping(path = "{CustomerId}/{CustomerName}") //setting alies when parameters names and variable names differ
