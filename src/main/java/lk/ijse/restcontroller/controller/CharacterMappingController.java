@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("character")
-public class CharactorMappingController {
+public class CharacterMappingController {
 
     //item/I333
     //item/Ivff
