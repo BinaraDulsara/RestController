@@ -23,7 +23,7 @@ public class PathVariableController {
         return itemCode;
     }
 
-    @GetMapping(path = "{CustomerId}/{CustomerName}") //alies
+    @GetMapping(path = "{CustomerId}/{CustomerName}") //setting alies when parameters names and variable names differ
     public String test2(@PathVariable ("CustomerId") String id, @PathVariable ("CustomerName") String name){
         return id +" "+name;
     }
